@@ -1,8 +1,9 @@
 #include <iostream>
 
+//Author Myron Stewart Jr.
+
 int main() {
     //Both are ways to make arrays
-
     int ages[5]; // [5]: Integer with length of five
 
     ages[0] = 13; // Me
@@ -12,7 +13,6 @@ int main() {
     ages[4] = 9; // Mirah
 
     float GPAs[] = {3.14f,2.55f,3.44f,3.99f,2.1f,1.75f};
-
     printf("I was %d years old when I made this\n", ages[0]);
     printf("It's currently 2016, and my brother, Josh, is %d\n", ages[1]);
     printf("One of my sisters, Alex, is %d\n", ages[3]);
