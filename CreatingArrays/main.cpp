@@ -6,7 +6,7 @@ int main() {
     //Both are ways to make arrays
     int ages[5]; // [5]: Integer with length of five
 
-    
+
     ages[0] = 13; // Me
     ages[1] = 14; // Josh
     ages[2] = 11; // Sarah
