@@ -131,3 +131,6 @@ fabric.properties
 
 .idea/
 cmake-build-debug/
+
+# Mac Files
+.DS_Store
