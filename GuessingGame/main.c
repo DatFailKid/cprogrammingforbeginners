@@ -2,9 +2,11 @@
 
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
 #define ANSI_COLOR_RESET   "\x1b[0m"
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_GREEN   "\x1b[32m"
 
 int main() {
-    //Original Game
+    //Original Concept
     /*char name[1]="";
 
     for (int i = ; i < 15; ++i) {
@@ -45,19 +47,19 @@ int main() {
 
         if (user == guess) {
             printf("...");
-            printf("\nYou actually guessed my number...");
+            printf(ANSI_COLOR_GREEN"\nYou actually guessed my number...");
             printf("\nCongrats >:(");
-            printf("\nNEXT!");
+            printf("\nNEXT!"ANSI_COLOR_RESET);
             break;
         }
         if (user != guess) {
-            printf("\nNope! Guess again!");
+            printf(ANSI_COLOR_RED"\nNope! Guess again!"ANSI_COLOR_RESET);
         }
         if (user <= 0 || user > 100) {
             printf("\nThat number is not between 1 and 100.");
         }
         if (g == 19) {
-            printf("\nOk, that's it, out of my tent!\nNEXT!");
+            printf(ANSI_COLOR_RED"\nOk, that's it, out of my tent!\nNEXT!"ANSI_COLOR_RESET);
             break;
         }
     }
