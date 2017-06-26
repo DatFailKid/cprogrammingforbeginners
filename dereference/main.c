@@ -21,9 +21,9 @@ int main() {
     printf("SCORE: %d\n", playScore);
     printf("SCORE(point): %d\n", *pointplayer);
 
+    //DO NOT DO THIS! (Move pointer mathematically)
     pointplayer = pointplayer-10;
 
-    //DO NOT DO THIS! (Move pointer mathematically)
     printf("                -10\n");
     printf("SCORE: %d\n", playScore);
     printf("SCORE(point): %d\n", *pointplayer); //The value shouldn't make sense, as it's dereferencing from a different place.
